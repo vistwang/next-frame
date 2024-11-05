@@ -11,12 +11,6 @@ export default function Index() {
         </Link>
       </li>
       <li className="p-4 h-14 rounded-lg flex items-center justify-center bg-sky-300 shadow-lg">
-        <Link href="/user">
-          user
-        </Link>
-        {/* <a href="/user">Home</a> */}
-      </li>
-      <li className="p-4 h-14 rounded-lg flex items-center justify-center bg-sky-300 shadow-lg">
         <Link href="/posts/first-post">
           Blog Post
         </Link>
@@ -28,12 +22,12 @@ export default function Index() {
       </li>
       <li className="p-4 h-14 rounded-lg flex items-center justify-center bg-sky-300 shadow-lg">
         <Link href="/products">
-          products
+          服务端组件 products
         </Link>
       </li>
       <li className="p-4 h-14 rounded-lg flex items-center justify-center bg-sky-300 shadow-lg">
         <Link href="/user">
-          客户端组件
+          客户端组件 user
         </Link>
       </li>
     </ul>
