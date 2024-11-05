@@ -16,10 +16,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="h-full bg-gray-100">
-      <body className={`${inter.className} h-full border-red-400 border-40`}>
-        <h1 className='text-red-400'>我是根 layout</h1>
-        {children}
-        </body>
+      <body className={`${inter.className} h-full justify-between flex flex-col`}>
+        <header className="bg-blue-400 py-3 px-2 text-white">我是头</header>
+        <main className="flex-1">{children}</main>
+        <footer className="bg-blue-400 py-3 px-2 text-white">我是尾</footer>
+      </body>
     </html>
   )
 }
