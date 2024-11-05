@@ -31,6 +31,11 @@ export default function Index() {
           products
         </Link>
       </li>
+      <li className="p-4 h-14 rounded-lg flex items-center justify-center bg-sky-300 shadow-lg">
+        <Link href="/user">
+          客户端组件
+        </Link>
+      </li>
     </ul>
     </div>
 }
