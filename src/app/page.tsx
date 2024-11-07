@@ -30,6 +30,11 @@ export default function Index() {
           客户端组件 user
         </Link>
       </li>
+      <li className="p-4 h-14 rounded-lg flex items-center justify-center bg-sky-300 shadow-lg">
+        <Link href="/blog/1">
+          SSG 博客
+        </Link>
+      </li>
     </ul>
     </div>
 }
