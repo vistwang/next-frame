@@ -10,13 +10,14 @@ export const metadata: Metadata = {
 
 // 获取博客列表数据
 async function getPosts(): Promise<BlogPost[]> {
-  const res = await fetch('http://localhost:3000/api/blog', {
+  const res = await fetch('https://jsonplaceholder.typicode.com/posts', {
     // force-cache 选项表示静态生成页面
     cache: 'force-cache',
+    next: { revalidate: 60 }, // 每60秒重新生成一次静态页面
   });
 
   if (!res.ok) {
-    throw new Error('Failed to fetch posts');
+    throw new Error('Failed to fetch blog');
   }
   return res.json();
 }
@@ -29,9 +30,9 @@ export default async function BlogPage() {
     <main>
       <h1>博客页面</h1>
       <ul>
-        {posts.map((post) => (
+        {posts.map((post, index) => (
           <li key={post.id}>
-            <a href={`/blog/${post.id}`}>{post.title}</a>
+            {index}：<a href={`/blog/${post.id}`}>{post.title}</a>
           </li>
         ))}
       </ul>
