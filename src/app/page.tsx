@@ -40,6 +40,11 @@ export default function Index() {
           openAI
         </Link>
       </li>
+      <li className="p-4 h-14 rounded-lg flex items-center justify-center bg-sky-300 shadow-lg">
+        <Link href="/grok">
+          grok2
+        </Link>
+      </li>
     </ul>
     </div>
 }
