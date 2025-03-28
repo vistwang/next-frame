@@ -432,6 +432,11 @@
     "@lexical/selection" "0.20.2"
     lexical "0.20.2"
 
+"@netlify/plugin-nextjs@^5.10.1":
+  version "5.10.1"
+  resolved "https://registry.npmjs.org/@netlify/plugin-nextjs/-/plugin-nextjs-5.10.1.tgz#caeea00f95f95e8808ea6b29a260ffeb1e3b44c6"
+  integrity sha512-HrE/+y5gIiYVyVQrhE566wfyXlvcbiuUaMe7yCG8X5/GBIGgidg2f7+1XrlOPsADsB5mup1N8N0N4OL5if+V8g==
+
 "@next/env@15.2.4":
   version "15.2.4"
   resolved "https://registry.npmjs.org/@next/env/-/env-15.2.4.tgz#060f8d8ddb02be5c825eab4ccd9ab619001efffb"
