@@ -17,9 +17,9 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" data-mode="light">
+    <html lang="en" data-mode="light" className="h-full">
       <body className={`${inter.className} h-full justify-between flex flex-col`}>
-        <header className="bg-blue-400 py-3 px-2 text-white text-right">
+        <header className="bg-blue-400 py-3 px-2 flex-0 text-white text-right">
           <Link className="mr-5 float-left" href="/">
           首页
           </Link>
@@ -59,7 +59,7 @@ export default function RootLayout({
           </div>
         </header>
         <main className="flex-1">{children}</main>
-        <footer className="bg-blue-400 py-3 px-2 text-white text-right">我是尾</footer>
+        <footer className="bg-blue-400 flex-0 py-3 px-2 text-white text-right">我是尾</footer>
       </body>
     </html>
   )
