@@ -1,3 +1,9 @@
 {
-  "extends": "next/core-web-vitals"
+  "extends": "next/core-web-vitals",
+  "rules": {
+    "import/no-anonymous-default-export": ["error", {
+      "allowArrowFunction": true,  // 允许匿名箭头函数
+      "allowObject": true          // 允许匿名对象
+    }]
+  }
 }
