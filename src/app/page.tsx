@@ -1,5 +1,3 @@
-// 根目录
-// eslint-disable-next-line react/display-name
-export default () => {
-  return <h1>home</h1>
+export default function Page() {
+  return <h1>欢迎来到冰凡的网站</h1>
 }
