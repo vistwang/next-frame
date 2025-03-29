@@ -1,5 +1,5 @@
-// 根目录
-// eslint-disable-next-line react/display-name
-export default () => {
-  return <h1>home</h1>
+import { Heart } from 'lucide-react';
+
+export default function Page() {
+  return <h1>江林达，我爱你 <Heart /></h1>
 }
