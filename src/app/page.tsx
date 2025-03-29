@@ -1,3 +1,5 @@
+import { Heart } from 'lucide-react';
+
 export default function Page() {
-  return <h1>欢迎来到冰凡的网站</h1>
+  return <h1>江林达，我爱你 <Heart /></h1>
 }
