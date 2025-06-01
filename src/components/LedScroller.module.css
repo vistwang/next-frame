@@ -1,0 +1,46 @@
+/* components/LedScroller.module.css */
+.scrollerContainer {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap; /* 禁止文字换行 */
+    display: flex;
+    align-items: center; /* 垂直居中 */
+    justify-content: flex-start; /* 从左边开始 */
+    padding: 10px 0; /* 上下留一点边距 */
+    box-sizing: border-box;
+    /* 模拟 LED 屏幕的像素感，可选 */
+    font-family: 'PixelatedMS SansSerif', 'Monaco', 'Consolas', 'Courier New', monospace;
+    font-smooth: never;
+    -webkit-font-smoothing: none;
+  }
+  
+  .scrollingText {
+    display: inline-block; /* 确保动画作用于块级元素 */
+    padding-left: 100%; /* 从屏幕外右侧开始 */
+    animation-name: scrollLeft;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    /* animation-duration 在组件内通过 style 设置 */
+    will-change: transform; /* 性能优化 */
+    letter-spacing: 2px; /* 模拟 LED 间距 */
+    font-weight: bold;
+  }
+  
+  @keyframes scrollLeft {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-100%); /* 移动自身的宽度，因为文字是重复的，所以看起来是连续的 */
+    }
+  }
+  
+  /* 可以考虑添加一个像素字体 */
+  /*
+  @font-face {
+    font-family: 'PixelatedMS SansSerif';
+    src: url('/fonts/PixelatedMS SansSerif.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  */
